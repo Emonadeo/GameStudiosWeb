@@ -17,7 +17,7 @@
 
 			<footer>
 				<div class="social-media">
-					<a href="https://www.facebook.com/pg/EpdemicGameStudios/"><img src="~/assets/images/icons/facebook.svg"/></a>
+					<a href="https://www.facebook.com/LyghtningStudios/"><img src="~/assets/images/icons/facebook.svg"/></a>
 					<a><img src="~/assets/images/icons/kickstarter.svg"/></a>
 					<a><img src="~/assets/images/icons/patreon.svg"/></a>
 					<a href="https://www.twitch.tv/lyghtningstudios"><img src="~/assets/images/icons/twitch.svg"/></a>
