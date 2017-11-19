@@ -3,15 +3,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'game-studios',
+    title: 'Heroes of 1944',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Game Web Representation' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+		link: [
+			{ href: 'https://fonts.googleapis.com/css?family=Righteous|Special+Elite', rel: 'stylesheet' }
+		]
   },
   /*
   ** Customize the progress bar color

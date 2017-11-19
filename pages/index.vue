@@ -1,58 +1,142 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        game-studios
-      </h1>
-      <h2 class="subtitle">
-        Game Web Representation
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+		<header>
+
+			<!-- Background Video -->
+			<div class="teaser-wrapper">
+				<video id="teaser" src="/teaser.mp4" autoplay muted loop></video>
+			</div>
+
+			<nav>
+				<img id="logo" src="~/assets/images/logo.svg">
+				<a>Blog</a>
+				<a>About</a>
+				<a>Partners</a>
+				<a href="https://www.paypal.me/EpdemicGame">Donate</a>
+			</nav>
+
+			<footer>
+				<div class="social-media">
+					<a href="https://www.facebook.com/pg/EpdemicGameStudios/"><img src="~/assets/images/icons/facebook.svg"/></a>
+					<a><img src="~/assets/images/icons/kickstarter.svg"/></a>
+					<a><img src="~/assets/images/icons/patreon.svg"/></a>
+					<a href="https://www.twitch.tv/lyghtningstudios"><img src="~/assets/images/icons/twitch.svg"/></a>
+					<a href="https://www.youtube.com/channel/UCULAujZeOH2ODlzyIs03xZg"><img src="~/assets/images/icons/youtube.svg"/></a>
+				</div>
+
+				<a id="read-more"><img src="~/assets/images/more.svg" alt=""></a>
+
+				<div class=""></div>
+			</footer>
+		</header>
+
+		<section class="content">
+
+		</section>
+	</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	color: white;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.content {
+	background-color: white;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+header {
+	position: relative;
+	background-color: rgba(121, 85, 72, 0.54);
+	padding: 10vh 10vw;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 }
 
-.links {
-  padding-top: 15px;
+.teaser-wrapper {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	z-index: -100;
 }
+
+#teaser {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	min-height: 50%;
+	min-width: 50%;
+}
+
+a {
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+#logo {
+	height: 7rem;
+	margin-bottom: 1em;
+	align-self: center;
+}
+
+nav {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: flex-start;
+	font-family: 'Righteous';
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+nav a, .social-media a {
+	background-color: black;
+}
+
+nav a:hover, .social-media a:hover {
+
+}
+
+nav a:not(:last-of-type) {
+	margin-bottom: 0.5rem;
+}
+
+footer {
+	align-self: stretch;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer > div {
+	flex: 1;
+}
+
+.social-media {
+	display: flex;
+}
+
+.social-media a:not(:last-child) {
+	margin-right: 1em;
+}
+
+footer a img {
+	display: block;
+	height: 2em;
+}
+
 </style>
