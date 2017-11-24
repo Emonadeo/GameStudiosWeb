@@ -9,9 +9,9 @@
 
 			<nav>
 				<img id="logo" src="~/assets/images/logo.svg">
-				<a>Blog</a>
-				<a>About</a>
-				<a>Partners</a>
+				<nuxt-link to="/blog">Blog</nuxt-link>
+				<nuxt-link to="/about">About</nuxt-link>
+				<nuxt-link to="/partners">Partners</nuxt-link>
 				<a href="https://www.paypal.me/EpdemicGame">Donate</a>
 			</nav>
 
@@ -39,10 +39,8 @@
 <script>
 </script>
 
-<style>
+<style lang="css" scoped>
 html, body {
-	box-sizing: border-box;
-	margin: 0;
 	color: white;
 }
 
@@ -85,11 +83,11 @@ a {
 	cursor: pointer;
 	display: block;
 	text-decoration: none;
-	color: inherit;
+  color: white;
 }
 
 #logo {
-	height: 7rem;
+	height: 6rem;
 	margin-bottom: 1em;
 	align-self: center;
 }
