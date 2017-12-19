@@ -1,20 +1,27 @@
 <template lang="html">
   <div id="container">
+
     <header>
-      Blog
+			<div class="wrap">
+      	<span class="wrap-child">Blog</span>
+			</div>
     </header>
-    <section class="blog">
-      <div class="entry" v-for="entry in entries">
-        <section class="entry-title">
-          {{ entry.title }}
-        </section>
-        <section class="entry-image" v-bind:style="{ backgroundImage: 'url(' + entry.image + ')' }"></section>
-        <section class="entry-content">
-          <div class="entry-date">{{ entry.date }}</div>
-          <div class="entry-text">{{ entry.text }}</div>
-        </section>
-      </div>
-    </section>
+		<div class="wrap">
+	    <section class="blog wrap-child">
+				<div class="blog-entry">
+					<section class="blog-image">
+
+					</section>
+					<section class="blog-title">
+
+					</section>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+	    </section>
+		</div>
 
   </div>
 </template>
@@ -46,59 +53,38 @@ export default {
 
 #container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
-  font-family: 'Righteous';
+	font-family: 'Righteous';
   font-size: 4.5em;
   line-height: 0.75;
   text-transform: uppercase;
-  padding: 0 10vw;
   background-color: black;
   color: white;
 }
 
+.blog-wrapper {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	background-color: green;
+}
+
 .blog {
-  flex: 1;
-  padding: 3em 10vw;
-  background-color: #795548;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	margin: 2rem 0;
 }
 
-.entry:not(:first-of-type) {
-  margin-top: 3em;
+.blog > div {
+	background-color: #eeeeee;
+	height: 1fr;
 }
 
-.entry-title {
-  color: white;
-  font-family: 'Special elite';
-  font-size: 2em;
-  margin-bottom: 0.5rem;
-}
-
-.entry-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 300px;
-}
-
-.entry-date {
-  margin-bottom: 0.5em;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.entry-content {
-  background-color: white;
-  padding: 1em;
-}
-
-.entry-text {
-  max-width: 1000px;
-  line-height: 1.3;
-}
+.blog > div:before {display: table; padding-top: 100%; content: '';}
 
 </style>

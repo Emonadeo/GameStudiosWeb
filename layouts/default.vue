@@ -16,4 +16,14 @@ html {
   margin: 0;
 }
 
+.wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.wrap-child {
+	width: 80%;
+	max-width: 1000px;
+}
+
 </style>
