@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Game Web Representation' }
     ],
 		link: [
-			{ href: 'https://fonts.googleapis.com/css?family=Righteous|Special+Elite', rel: 'stylesheet' }
+			{ href: 'https://fonts.googleapis.com/css?family=Righteous|Special+Elite|Teko', rel: 'stylesheet' }
 		]
   },
   /*

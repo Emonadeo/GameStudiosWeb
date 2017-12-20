@@ -26,4 +26,14 @@ html {
 	max-width: 1000px;
 }
 
+@font-face {
+  font-family: 'Pahuenga';
+  src: url('~/assets/font/Pahuenga.otf');
+}
+
+@font-face {
+  font-family: 'Weekdays';
+  src: url('~/assets/font/Weekdays.ttf');
+}
+
 </style>

@@ -30,9 +30,51 @@
 			</footer>
 		</header>
 
-		<section class="content">
-
-		</section>
+		<div class="content">
+      <section class="slogan wrap">
+        <img src="~/assets/images/slogan.svg"/>
+      </section>
+      <section class="blurb wrap">
+        <div class="wrap-child">
+          <div>
+            Real-life experience.
+          </div>
+          <div>
+            Over 48 features (never seen before) taken from the real world!
+          </div>
+          <div>
+            Community first.
+          </div>
+          <div>
+            Be involved and vote on further developments!
+          </div>
+          <div>
+            Forget pay to win.
+          </div>
+          <div>
+            Obtain all gear using our in game currency!
+          </div>
+          <div>
+            In game levelling.
+          </div>
+          <div>
+            We speed you up!
+          </div>
+          <div>
+            New game modes.
+          </div>
+          <div>
+            A unique world for you to discover!
+          </div>
+          <div>
+            History live.
+          </div>
+          <div>
+            Soldier slang, historically accurate vehicles, weapons, ballistics and sounds!
+          </div>
+        </div>
+      </section>
+		</div>
 	</div>
 </template>
 
@@ -135,6 +177,41 @@ footer > div {
 footer a img {
 	display: block;
 	height: 2em;
+}
+
+.content {
+  padding-top: 1em;
+  background-color: #1a1512;
+  color: white;
+}
+
+.slogan {
+  font-family: 'Pahuenga';
+  text-transform: uppercase;
+  background-color: #A52323;
+  margin-top: 3em;
+  letter-spacing: 1px;
+}
+
+.slogan img {
+  height: 4em;
+}
+
+.blurb {
+  font-family: 'Teko';
+  font-size: 1.5em;
+  padding: 2em 1em;
+}
+
+.blurb .wrap-child {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-transform: uppercase;
+}
+
+.blurb .wrap-child > div:nth-child(odd) {
+  text-align: right;
+  margin-right: 3em;
 }
 
 </style>
