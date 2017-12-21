@@ -9,10 +9,13 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Game Web Representation' }
     ],
-		link: [
-			{ href: 'https://fonts.googleapis.com/css?family=Righteous|Special+Elite|Teko', rel: 'stylesheet' }
-		]
+    link: [
+      { href: 'https://fonts.googleapis.com/css?family=Righteous|Special+Elite|Teko', rel: 'stylesheet' }
+    ]
   },
+  css: [
+    '~/assets/main.css'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -34,9 +37,9 @@ module.exports = {
         })
       }
     },
-		/*
-		**
-		*/
-		vendor: ['axios']
+    /*
+    **
+    */
+    vendor: ['axios']
   }
 }

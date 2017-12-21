@@ -1,11 +1,5 @@
 <template lang="html">
   <div id="container">
-
-    <header>
-			<div class="wrap">
-      	<span class="wrap-child">Blog</span>
-			</div>
-    </header>
 		<div class="wrap">
 	    <section class="blog wrap-child">
 				<div class="blog-entry">
@@ -28,6 +22,7 @@
 
 <script>
 export default {
+  layout: 'navigated',
   data () {
     return {
       entries: [
@@ -50,21 +45,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-#container {
-  height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-header {
-	font-family: 'Righteous';
-  font-size: 4.5em;
-  line-height: 0.75;
-  text-transform: uppercase;
-  background-color: black;
-  color: white;
-}
 
 .blog-wrapper {
 	display: flex;

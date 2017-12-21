@@ -8,9 +8,10 @@
 			</div>
 
 			<nav>
-				<img id="logo" src="~/assets/images/logo.svg">
-				<nuxt-link to="/blog">Blog</nuxt-link>
-				<nuxt-link to="/about">About</nuxt-link>
+				<!-- <img id="logo" src="~/assets/images/logo.svg"> -->
+        <nuxt-link to="/game">Game</nuxt-link>
+				<nuxt-link to="/blog">Devlog</nuxt-link>
+        <nuxt-link to="/team">Team</nuxt-link>
 				<nuxt-link to="/partners">Partners</nuxt-link>
 				<a href="https://www.paypal.me/EpdemicGame">Donate</a>
 			</nav>
@@ -24,57 +25,13 @@
 					<a href="https://www.youtube.com/channel/UCULAujZeOH2ODlzyIs03xZg"><img src="~/assets/images/icons/youtube.svg"/></a>
 				</div>
 
-				<a id="read-more"><img src="~/assets/images/more.svg" alt=""></a>
+				<!-- <a id="read-more"><img src="~/assets/images/more.svg" alt=""></a> -->
 
 				<div class=""></div>
 			</footer>
 		</header>
 
-		<div class="content">
-      <section class="slogan wrap">
-        <img src="~/assets/images/slogan.svg"/>
-      </section>
-      <section class="blurb wrap">
-        <div class="wrap-child">
-          <div>
-            Real-life experience.
-          </div>
-          <div>
-            Over 48 features (never seen before) taken from the real world!
-          </div>
-          <div>
-            Community first.
-          </div>
-          <div>
-            Be involved and vote on further developments!
-          </div>
-          <div>
-            Forget pay to win.
-          </div>
-          <div>
-            Obtain all gear using our in game currency!
-          </div>
-          <div>
-            In game levelling.
-          </div>
-          <div>
-            We speed you up!
-          </div>
-          <div>
-            New game modes.
-          </div>
-          <div>
-            A unique world for you to discover!
-          </div>
-          <div>
-            History live.
-          </div>
-          <div>
-            Soldier slang, historically accurate vehicles, weapons, ballistics and sounds!
-          </div>
-        </div>
-      </section>
-		</div>
+
 	</div>
 </template>
 
@@ -103,10 +60,10 @@ header {
 
 .teaser-wrapper {
 	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 200%;
-	height: 200%;
+	top: -50vh;
+	left: -50vw;
+	width: 200vw;
+	height: 200vh;
 	z-index: -100;
 }
 
@@ -177,41 +134,6 @@ footer > div {
 footer a img {
 	display: block;
 	height: 2em;
-}
-
-.content {
-  padding-top: 1em;
-  background-color: #1a1512;
-  color: white;
-}
-
-.slogan {
-  font-family: 'Pahuenga';
-  text-transform: uppercase;
-  background-color: #A52323;
-  margin-top: 3em;
-  letter-spacing: 1px;
-}
-
-.slogan img {
-  height: 4em;
-}
-
-.blurb {
-  font-family: 'Teko';
-  font-size: 1.5em;
-  padding: 2em 1em;
-}
-
-.blurb .wrap-child {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-transform: uppercase;
-}
-
-.blurb .wrap-child > div:nth-child(odd) {
-  text-align: right;
-  margin-right: 3em;
 }
 
 </style>
