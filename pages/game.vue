@@ -108,8 +108,9 @@ export default {
   font-family: 'Headliner';
   text-transform: uppercase;
   background-color: #A52323;
-  font-size: 2.8em;
+  font-size: 2.5em;
   padding: 0.2em 0 0.3em 0;
+  text-align: center;
 }
 
 .slogan img {

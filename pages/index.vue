@@ -10,7 +10,7 @@
 			<nav>
 				<!-- <img id="logo" src="~/assets/images/logo.svg"> -->
         <nuxt-link to="/game">Game</nuxt-link>
-				<nuxt-link to="/blog">Devlog</nuxt-link>
+				<nuxt-link to="/devlog">Devlog</nuxt-link>
         <nuxt-link to="/team">Team</nuxt-link>
 				<nuxt-link to="/partners">Partners</nuxt-link>
 				<a href="https://www.paypal.me/EpdemicGame">Donate</a>

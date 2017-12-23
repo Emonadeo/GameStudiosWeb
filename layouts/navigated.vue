@@ -23,8 +23,7 @@ export default {
 
 header {
 	font-family: 'Righteous';
-  font-size: 4.5em;
-  line-height: 0.75;
+  font-size: 3em;
   text-transform: uppercase;
   background-color: black;
   color: white;
