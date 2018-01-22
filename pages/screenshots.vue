@@ -9,9 +9,13 @@
 
     <!--Pop-Up-->
 
-    <section v-show="isViewing" class="view" @click="isViewing = false">
-      <img :src="images[viewing]" />
-    </section>
+    <transition name="fade">
+      <section v-show="isViewing" class="view" @click="isViewing = false">
+        <transition name="scale">
+          <img :src="images[viewing]" />
+        </transition>
+      </section>
+    </transition>
   </div>
 </template>
 
@@ -68,7 +72,15 @@ export default {
 }
 
 .view img {
-  width: 70%;
+  width: 70vw;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 </style>
