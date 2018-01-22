@@ -69,6 +69,34 @@
         </nuxt-link>
       </div>
     </section>
+    <section class="join">
+      <div class="slogan headliner wrap">
+        <span class="wrap-child">Be part of our Community!</span>
+      </div>
+      <div class="wrap">
+        <p class="join-text wrap-child">
+          Leave your feedback: Your suggestions are highly welcome to optimise your gaming experience. Just get in touch with us via our forum, facebook, email, discord or website. You may receive unique cosmetic items, skins, discounts and more for particular useful comments.
+        </p>
+      </div>
+      <div class="slogan headliner wrap">
+        <span class="wrap-child">Be part of our Team!</span>
+      </div>
+      <div class="wrap">
+        <p class="join-text wrap-child">
+          Want to join us? Yes! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="closed-alpha headliner wrap">
+        <span class="wrap-child">The Closed Alpha will be released in spring 2018.</span>
+      </div>
+      <div class="wrap">
+        <div class="wrap-child">
+          <p class="join-text" style="text-align: center">
+            Want to play it? Our Social Media partners are giving away keys! Get yourself one!
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -84,8 +112,8 @@ export default {
   color: white;
 }
 
-#container > section {
-  margin-bottom: 7em;
+#container > section:not(:last-of-type) {
+  margin-bottom: 7rem;
 }
 
 .trailer {
@@ -128,6 +156,10 @@ export default {
 .blurb > div:nth-child(odd) {
   text-align: right;
   margin-right: 3em;
+}
+
+.information {
+  margin-bottom: 4rem !important;
 }
 
 .media .wrap-child {
@@ -182,4 +214,24 @@ export default {
   background-size: cover;
   background-position: center;
 }
+
+.join-text {
+  margin-bottom: 2.5em;
+  font-family: 'Teko';
+  font-size: 1.6em;
+  padding: 2rem 0;
+  letter-spacing: 0.5px;
+}
+
+.join-title {
+  font-family: 'Headliner';
+  font-size: 2.5em;
+  display: block;
+}
+
+.closed-alpha {
+  text-align: center;
+  background-color: black;
+}
+
 </style>
