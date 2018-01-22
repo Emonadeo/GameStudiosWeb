@@ -55,11 +55,11 @@
     </section>
     <section class="media wrap">
       <div class="wrap-child">
-        <span class="media-title headliner">Screenshots</span>
+        <span class="media-title headliner">Pictures</span>
         <span class="media-title headliner">Videos</span>
-        <span class="media-title headliner">3D Modelle</span>
-        <nuxt-link to="/screenshots" id="media-screenshots">
-          <span>Screenshots</span>
+        <span class="media-title headliner">3D Models</span>
+        <nuxt-link to="/pictures" id="media-screenshots">
+          <span>Pictures</span>
         </nuxt-link>
         <nuxt-link to="/videos" id="media-videos">
           <span>Videos</span>
