@@ -8,7 +8,7 @@
       </div>
     </section>
     <section class="information">
-      <div class="slogan wrap">
+      <div class="slogan headliner wrap">
         <span class="wrap-child">A World War 2 Realistic PC Game Like No Other Game Ever Attempted</span>
         <!-- <img class="wrap-child" src="~/assets/images/slogan.svg"/> -->
       </div>
@@ -55,15 +55,18 @@
     </section>
     <section class="media wrap">
       <div class="wrap-child">
-        <a>
+        <span class="media-title headliner">Screenshots</span>
+        <span class="media-title headliner">Videos</span>
+        <span class="media-title headliner">3D Modelle</span>
+        <nuxt-link to="/screenshots" id="media-screenshots">
           <span>Screenshots</span>
-        </a>
-        <a>
+        </nuxt-link>
+        <nuxt-link to="/videos" id="media-videos">
           <span>Videos</span>
-        </a>
-        <a>
+        </nuxt-link>
+        <nuxt-link to="/models" id="media-models">
           <span>3D-Modelle</span>
-        </a>
+        </nuxt-link>
       </div>
     </section>
   </div>
@@ -105,11 +108,7 @@ export default {
 }
 
 .slogan {
-  font-family: 'Headliner';
-  text-transform: uppercase;
   background-color: #A52323;
-  font-size: 2.5em;
-  padding: 0.2em 0 0.3em 0;
   text-align: center;
 }
 
@@ -134,7 +133,7 @@ export default {
 .media .wrap-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-column-gap: 2rem;
 }
 
 .media .wrap-child > a {
@@ -142,8 +141,45 @@ export default {
   background-color: black;
   display: flex;
   justify-content:  center;
-  align-items:  center;
+  align-items: stretch;
+}
+
+.media .wrap-child > a > span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: all 200ms ease;
+}
+
+.media .wrap-child > a > span:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.media-title {
+  margin-left: 0.7rem;
+}
+
+.headliner {
+  font-family: 'Headliner';
+  font-size: 2.5em;
+  padding: 0.2em 0 0.3em 0;
+  text-transform: uppercase;
 }
 
 .media .wrap-child > a:before {display: table; padding-top: 100%; content: '';}
+
+#media-screenshots {
+  background: url('~/assets/images/game/screenshots.png');
+  background-size: 330%;
+  background-position: top;
+}
+
+#media-models {
+  background: url('~/assets/images/game/models.gif');
+  background-size: cover;
+  background-position: center;
+}
 </style>

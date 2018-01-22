@@ -8,6 +8,10 @@ html, body {
   margin: 0;
 }
 
+a, a:active {
+  text-decoration: none;
+}
+
 .wrap {
 	display: flex;
 	justify-content: center;

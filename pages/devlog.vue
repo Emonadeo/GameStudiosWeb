@@ -62,7 +62,6 @@ export default {
 
 .blog > div {
 	background-color: #eeeeee;
-	height: 1fr;
 }
 
 .blog > div:before {display: table; padding-top: 100%; content: '';}
