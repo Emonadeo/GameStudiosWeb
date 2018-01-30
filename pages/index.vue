@@ -13,16 +13,17 @@
 				<nuxt-link to="/devlog">Devlog</nuxt-link>
         <nuxt-link to="/team">Team</nuxt-link>
 				<nuxt-link to="/partners">Partners</nuxt-link>
-				<a href="https://www.paypal.me/EpdemicGame">Donate</a>
+				<!-- <a href="https://www.paypal.me/EpdemicGame">Donate</a> -->
 			</nav>
 
 			<footer>
 				<div class="social-media">
 					<a href="https://www.facebook.com/LyghtningStudios/"><img src="~/assets/images/icons/facebook.svg"/></a>
-					<a><img src="~/assets/images/icons/kickstarter.svg"/></a>
-					<a><img src="~/assets/images/icons/patreon.svg"/></a>
+					<!-- <a><img src="~/assets/images/icons/kickstarter.svg"/></a> -->
+					<!-- <a><img src="~/assets/images/icons/patreon.svg"/></a> -->
 					<a href="https://www.twitch.tv/lyghtningstudios"><img src="~/assets/images/icons/twitch.svg"/></a>
 					<a href="https://www.youtube.com/channel/UCULAujZeOH2ODlzyIs03xZg"><img src="~/assets/images/icons/youtube.svg"/></a>
+					<a href="https://discord.gg/qGqeA4Z"><img src="~/assets/images/icons/discord.svg"/></a>
 				</div>
 
 				<!-- <a id="read-more"><img src="~/assets/images/more.svg" alt=""></a> -->

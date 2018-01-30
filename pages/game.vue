@@ -13,42 +13,47 @@
         <!-- <img class="wrap-child" src="~/assets/images/slogan.svg"/> -->
       </div>
       <div class="wrap">
-        <div class="blurb wrap-child">
-          <div>
-            Real-life experience.
+        <div class="wrap-child">
+          <div class="blurb">
+            <div>
+              Real-life experience.
+            </div>
+            <div>
+              Over 48 individual features taken from the real world!
+            </div>
+            <div>
+              Community first.
+            </div>
+            <div>
+              Be involved and vote on further developments!
+            </div>
+            <div>
+              Forget pay to win.
+            </div>
+            <div>
+              Obtain all gear using our in game currency!
+            </div>
+            <div>
+              In game levelling.
+            </div>
+            <div>
+              We speed you up!
+            </div>
+            <div>
+              New game modes.
+            </div>
+            <div>
+              A unique world for you to discover!
+            </div>
+            <div>
+              History live.
+            </div>
+            <div>
+              Soldier slang, historically accurate vehicles, weapons, ballistics and sounds!
+            </div>
           </div>
-          <div>
-            Over 48 individual features taken from the real world!
-          </div>
-          <div>
-            Community first.
-          </div>
-          <div>
-            Be involved and vote on further developments!
-          </div>
-          <div>
-            Forget pay to win.
-          </div>
-          <div>
-            Obtain all gear using our in game currency!
-          </div>
-          <div>
-            In game levelling.
-          </div>
-          <div>
-            We speed you up!
-          </div>
-          <div>
-            New game modes.
-          </div>
-          <div>
-            A unique world for you to discover!
-          </div>
-          <div>
-            History live.
-          </div>
-          <div>
-            Soldier slang, historically accurate vehicles, weapons, ballistics and sounds!
+          <div class="links">
+            <a>Read more</a>
           </div>
         </div>
       </div>
@@ -74,17 +79,31 @@
         <span class="wrap-child">Be part of our Community!</span>
       </div>
       <div class="wrap">
-        <p class="join-text wrap-child">
-          Leave your feedback: Your suggestions are highly welcome to optimise your gaming experience. Just get in touch with us via our forum, facebook, email, discord or website. You may receive unique cosmetic items, skins, discounts and more for particular useful comments.
-        </p>
+        <div class="wrap-child">
+          <p class="join-text wrap-child">
+            Leave your feedback: Your suggestions are highly welcome to optimise your gaming experience. Just get in touch with us via our forum, facebook, email, discord or website. You may receive unique cosmetic items, skins, discounts and more for particular useful comments.
+          </p>
+          <div class="links icons">
+            <!-- <a>Forum</a> -->
+            <a><img src="~/assets/images/icons/facebook.svg"/></a>
+            <a><img src="~/assets/images/icons/twitch.svg"/></a>
+            <a><img src="~/assets/images/icons/youtube.svg"/></a>
+            <a href="https://discord.gg/qGqeA4Z"><img src="~/assets/images/icons/discord.svg"/></a>
+          </div>
+        </div>
       </div>
       <div class="slogan headliner wrap">
         <span class="wrap-child">Be part of our Team!</span>
       </div>
       <div class="wrap">
-        <p class="join-text wrap-child">
-          Want to join us? Yes! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
+        <div class="wrap-child">
+          <p class="join-text">
+            Want to join us? Yes!
+          </p>
+          <div class="links">
+            <a class="">View</a>
+          </div>
+        </div>
       </div>
       <div class="closed-alpha headliner wrap">
         <span class="wrap-child">The Closed Alpha will be released in spring 2018.</span>
@@ -159,7 +178,7 @@ export default {
 }
 
 .information {
-  margin-bottom: 4rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .media .wrap-child {
@@ -216,7 +235,6 @@ export default {
 }
 
 .join-text {
-  margin-bottom: 2.5em;
   font-family: 'Teko';
   font-size: 1.6em;
   padding: 2rem 0;
@@ -229,9 +247,50 @@ export default {
   display: block;
 }
 
+.links {
+  margin-bottom: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.links a:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.links.icons a {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.links a {
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 0.2rem 1.5rem;
+  font-family: 'Teko';
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+}
+
+.links a img {
+  height: 1.5em;
+}
+
+.links a:hover {
+  background-color: black;
+}
+
 .closed-alpha {
   text-align: center;
   background-color: black;
+}
+
+.join .slogan:not(:first-of-type) {
+  margin-top: 2rem;
 }
 
 </style>

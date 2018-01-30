@@ -9,6 +9,7 @@ html, body {
 }
 
 a, a:active {
+  color: inherit;
   text-decoration: none;
 }
 
